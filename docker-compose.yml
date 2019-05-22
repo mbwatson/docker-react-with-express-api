@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api:
-    container_name: node
+    container_name: project-api
     build:
       context: ./api/
       dockerfile: Dockerfile
@@ -13,7 +13,7 @@ services:
       - $API_PORT:$API_PORT
 
   frontend:
-    container_name: react
+    container_name: project-frontend
     build:
       context: ./frontend/
       dockerfile: Dockerfile-dev

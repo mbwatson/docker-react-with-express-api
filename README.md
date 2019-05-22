@@ -75,38 +75,39 @@ $ docker-compose up
 The above command starts and attaches to the three containers and results in output like the following.
 
 ```bash
-Starting node ... 
-Starting react ... 
-Starting react
-Starting react ... done
-Attaching to node, react
-node        | 
-node        | > api@1.0.0 start /usr/src/app
-node        | > nodemon app
-node        | 
-node        | [nodemon] 1.18.10
-node        | [nodemon] to restart at any time, enter `rs`
-node        | [nodemon] watching: *.*
-node        | [nodemon] starting `node app.js`
-node        | 
-node        | Shhh... I'm listening on port 3030.
-node        | 
-react       | 
-react       | > app@0.1.0 start /usr/src/app
-react       | > react-scripts start
-react       | 
-react       | Starting the development server...
-react       | 
-react       | Compiled successfully!
-react       | 
-react       | You can now view app in the browser.
-react       | 
-react       |   Local:            http://localhost:3000/
-react       |   On Your Network:  http://192.168.112.3:3000/
-react       | 
-react       | Note that the development build is not optimized.
-react       | To create a production build, use npm run build.
-react       | 
+Recreating node ... 
+Recreating react ... 
+Recreating react
+Recreating react ... done
+Attaching to project-api, project-frontend
+project-api | 
+project-api | > api@1.0.0 start /usr/src/app
+project-api | > nodemon app
+project-api | 
+project-api | [nodemon] 1.18.9
+project-api | [nodemon] to restart at any time, enter `rs`
+project-api | [nodemon] watching: *.*
+project-api | [nodemon] starting `node app.js`
+project-api | 
+project-api | Shhh... I'm listening on port 3030.
+project-api | 
+project-frontend | 
+project-frontend | > app@0.1.0 start /usr/src/app
+project-frontend | > react-scripts start
+project-frontend | 
+project-frontend | Starting the development server...
+project-frontend | 
+project-frontend | Compiled successfully!
+project-frontend | 
+project-frontend | You can now view app in the browser.
+project-frontend | 
+project-frontend |   Local:            http://localhost:3000/
+project-frontend |   On Your Network:  http://192.168.240.3:3000/
+project-frontend | 
+project-frontend | Note that the development build is not optimized.
+project-frontend | To create a production build, use npm run build.
+project-frontend | 
+
   .
   .
   .
